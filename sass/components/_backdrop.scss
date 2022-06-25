@@ -8,16 +8,13 @@
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.backdrop.is-hidden .modal {
-    transform: translate(-50%, -50%) scale(0) rotate(180deg);
-}
+
 
 .is-hidden {
     visibility: none;
     opacity: 0;
     pointer-events: none;
 }
-
 .modal {
     width: 528px;
     min-height: 581px;
@@ -44,12 +41,10 @@
     top: 0;
 }
     }
+    .backdrop.is-hidden & {
+        transform: translate(-50%, -50%) scale(0) rotate(180deg);
+    }
 }
-
-
-
-
-
 .no-scroll {
     overflow: hidden;
 }
@@ -67,18 +62,15 @@
 .modal__field {
     margin-bottom: 10px;
 }
-
 .input__wrap {
     position: relative;
 }
-
 .modal__icon {
     position: absolute;
     left: 12px;
     top: 50%;
     transform: translateY(-50%);
 }
-
 .modal__input {
     width: 100%;
     height: 40px;
@@ -95,9 +87,6 @@
         fill: var(--accent-color);
     }
 }
-
-
-
 .modal__label {
     font-size: 12px;
     line-height: 1.16;
@@ -107,7 +96,6 @@
     text-align: left;
     margin-bottom: 4px;
 }
-
 .modal__text {
     width: 100%;
     height: 100px;
@@ -128,9 +116,6 @@
         color: rgba(117, 117, 117, 0.5);
     }
 }
-
-
-
 .check__test {
     color: #555555;
     font-size: 14px;
@@ -151,28 +136,19 @@
         justify-content: center;
     }
 }
-
-
-
 .btn {
     padding: 10px 55px;
 }
-
-
-
 .check__icon {
     fill: transparent;
 }
-
 .modal__check:checked+.check__test span {
     background-color: var(--accent-color);
     border: none;
 }
-
 .modal__check:focus+.check__test span {
     border-color: var(--accent-color);
 }
-
 .modal__check:checked+.check__test .check__icon {
     fill: #fff;
 }

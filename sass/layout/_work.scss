@@ -3,16 +3,17 @@
     padding-top: 94px;
     padding-bottom: 94px;
     text-align: center;
-}
-
-.work__title {
+    
+&__title {
     margin-bottom: 50px;
 }
 
-.work__list {
+&__list {
     display: flex;
     flex-wrap: wrap;
 }
+}
+
 
 .work__item {
     flex-basis: calc(100% / 4 - 30px);
