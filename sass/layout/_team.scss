@@ -64,7 +64,7 @@
    &:hover,
 &:focus {
     color: #FFFFFF;
-    background-color: var(--accent-color);
+    background-color: $accent-color;
 }
 }
 .team__soc-icon {

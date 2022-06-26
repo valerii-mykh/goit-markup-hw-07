@@ -80,11 +80,11 @@
     color: #090B13;
     outline: none;
     &:focus {
-        border-color: var(--accent-color);
+        border-color: $accent-color;
     }
     
     &:focus+.modal__icon {
-        fill: var(--accent-color);
+        fill: $accent-color;
     }
 }
 .modal__label {
@@ -105,7 +105,7 @@
     resize: none;
     outline: none;
     &:focus {
-        border-color: var(--accent-color);
+        border-color: $accent-color;
     }
     
     &::placeholder {
@@ -143,11 +143,11 @@
     fill: transparent;
 }
 .modal__check:checked+.check__test span {
-    background-color: var(--accent-color);
+    background-color: $accent-color;
     border: none;
 }
 .modal__check:focus+.check__test span {
-    border-color: var(--accent-color);
+    border-color: $accent-color;
 }
 .modal__check:checked+.check__test .check__icon {
     fill: #fff;

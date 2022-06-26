@@ -53,7 +53,7 @@
 }
 }
 .current {
-    color: var(--accent-color);
+    color: $accent-color;
     &::after {
     content: '';
     position: absolute;
@@ -84,5 +84,5 @@
 .nav__link:focus,
 .nav__mail:focus,
 .nav__tel:focus {
-    color: var(--accent-color);
+    color: $accent-color;
 }

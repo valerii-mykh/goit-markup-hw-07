@@ -30,7 +30,7 @@
     border: none;
     padding: 10px 32px;
     cursor: pointer;
-    background-color: var(--accent-color);
+    background-color: $accent-color;
     color: #fff;
   & .btn:hover,
 & .btn:focus {
